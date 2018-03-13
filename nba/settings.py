@@ -9,10 +9,10 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'NBA-Team2'
+BOT_NAME = 'nba'
 
-SPIDER_MODULES = ['NBA-Team2.spiders']
-NEWSPIDER_MODULE = 'NBA-Team2.spiders'
+SPIDER_MODULES = ['nba.spiders']
+NEWSPIDER_MODULE = 'nba.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -64,7 +64,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'NBA-Team2.pipelines.NbaPipeline': 100,
+    'nba.pipelines.NbaPipeline': 100,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
